@@ -54,3 +54,7 @@
 [submodule "retail-ai-suite/voice-enabled-interactions"]
 	path = retail-ai-suite/voice-enabled-interactions
 	url = https://github.com/intel-retail/voice-enabled-interactions.git
+[submodule "metro-ai-suite/agentic-rag"]
+	path = metro-ai-suite/agentic-rag
+	url = https://github.com/opea-project/GenAIExamples.git
+	shallow = true

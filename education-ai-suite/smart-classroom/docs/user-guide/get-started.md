@@ -1,6 +1,9 @@
-# Quick Start Guide
+# Get Started with Smart Classroom
 
-## Step 1: Clone Repository
+> **Important:** Use **Windows PowerShell** (not Command Prompt/CMD) for all steps in this guide.
+> PowerShell scripts (`.ps1` files) will not execute in CMD — they will only open as text files.
+
+## Step 1: Clone the Repository
 
 Go to the target directory of your choice and clone the suite.
 If you want to clone a specific release branch, replace `release-2026.1.0` with the desired tag.
@@ -13,13 +16,14 @@ To learn more on partial cloning, check the [Repository Cloning guide](https://d
   cd education-ai-suite
   cd smart-classroom
 ```
-## Step 2: Run Setup Script (First-Time Only)
+## Step 2: Run the Setup Script (First-Time Only)
 
 ```powershell
 .\setup-smart-classroom.ps1
 ```
 
-> **Note:** If all prerequisites are already installed (FFmpeg, DL Streamer, Python dependencies), you can skip setup and directly run `.\start-smart-classroom.ps1`.
+> **Note:** If all prerequisites are already installed (FFmpeg, DL Streamer, Python
+> dependencies), you can skip setup and directly run `.\start-smart-classroom.ps1`.
 
 The setup script will:
 
@@ -53,6 +57,7 @@ If you encounter issues during automated setup, refer to the manual steps below:
 
 | Issue | Solution |
 |-------|----------|
+| `PSSecurityException` when running `.ps1` scripts | Run `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` in PowerShell |
 | FFmpeg installation fails | See [Manual Step 1A](advance-setup-guide.md#a-install-ffmpeg-required-for-audio-processing) |
 | DL Streamer download fails | See [Manual Step 1B](advance-setup-guide.md#b-install-dl-streamer) |
 | Python dependencies fail | See [Manual Step 1D](advance-setup-guide.md#d-install-python-dependencies) |
@@ -81,14 +86,17 @@ The startup script performs:
 
 ## Manual Setup
 
- **[Advance Setup Guide](advance-setup-guide.md)**:  Follow step-by-step instructions to set up the application.
+**[Advanced Setup Guide](advance-setup-guide.md)**:  Follow step-by-step instructions to set up the application.
 
-Advance Setup guide covers:
+Advanced Setup guide covers:
 
 - **Step 1:** Install Dependencies (FFmpeg, DL Streamer, Python, Content Search)
 - **Step 2:** Configuration (config.yaml settings)
 - **Step 3-6:** Run Services & Access UI
 - **Step 7:** Speaker Diarization Setup (Optional)
+- **[Troubleshooting](advance-setup-guide.md#troubleshooting)** — solutions for common setup and runtime issues
+- **[Known Issues](advance-setup-guide.md#known-issues)** — current limitations and workarounds
+- **[Uninstall the Application](advance-setup-guide.md#uninstall-the-application)** — steps to cleanly remove the environment and models
 
 ---
 

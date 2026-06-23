@@ -46,8 +46,7 @@ To get started:
      ./install.sh smart-intersection
      ```
 
-> **Note:** For environments requiring a specific host IP address (such as when using Edge
-> Manageability Toolkit or deploying across different network interfaces), you can explicitly
+> **Note:** For environments requiring a specific host IP address (for example, when deploying across different network interfaces), you can explicitly
 > specify the IP address (Replace `<HOST_IP>` with your target IP address.):
 > `./install.sh smart-intersection <HOST_IP>`
 
@@ -229,6 +228,7 @@ Once the application is running, follow the [Access the Application and Componen
 ```bash
 docker compose down
 ```
+
 To uninstall Trusted Compute from the host, refer to the [Trusted Compute documentation](https://github.com/open-edge-platform/trusted-compute/blob/main/docs/trusted_compute_baremetal.md).
 
 ## Other Deployment Options
